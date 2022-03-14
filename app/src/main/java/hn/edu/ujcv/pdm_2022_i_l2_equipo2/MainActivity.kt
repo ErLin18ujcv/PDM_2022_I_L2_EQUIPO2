@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnAlumno.setOnClickListener { alumno() }
+        btnSalir.setOnClickListener { salir() }
         inicializar1()
         inicializar2()
     }
@@ -42,5 +43,8 @@ class MainActivity : AppCompatActivity() {
         }catch (e: Exception){
             println(e.message)
         }
+    }
+    fun salir(){
+        System.exit(0)
     }
 }
