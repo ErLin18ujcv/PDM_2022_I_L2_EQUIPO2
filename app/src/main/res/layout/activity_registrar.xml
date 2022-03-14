@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarActivity">
+
+    <TextView
+        android:id="@+id/txvRegistrarClases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:text="Ingresar Clases"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:text="Nombre"
+        app:layout_constraintEnd_toStartOf="@+id/txtNombre"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:hint="Ingrese Nombre"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvNombre"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txvCodigo"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="68dp"
+        android:text="Codigo"
+        app:layout_constraintBottom_toTopOf="@+id/txvSeccion"
+        app:layout_constraintEnd_toStartOf="@+id/txtCodigo"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txvSeccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seccion"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtSeccion"
+        app:layout_constraintEnd_toStartOf="@+id/txtSeccion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtSeccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Ingrese Seccion"
+        app:layout_constraintBottom_toTopOf="@+id/txtHora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txvHora"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="448dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="68dp"
+        android:text="Hora"
+        app:layout_constraintBottom_toTopOf="@+id/txvEdificioPiso"
+        app:layout_constraintEnd_toStartOf="@+id/txtHora"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txvEdificioPiso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="58dp"
+        android:text="Edificio/Piso"
+        app:layout_constraintBottom_toTopOf="@+id/txvAula"
+        app:layout_constraintEnd_toStartOf="@+id/txtEdificioPiso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvHora" />
+
+    <EditText
+        android:id="@+id/txtEdificioPiso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="Ingrese Edificio"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtAula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txvEdificioPiso"
+        app:layout_constraintTop_toBottomOf="@+id/txtHora"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Guardar"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAula" />
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Ingrese Codigo"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtSeccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txvCodigo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="Ingrese Hora"
+        android:inputType="time"
+        app:layout_constraintBottom_toTopOf="@+id/txtEdificioPiso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txvHora"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeccion"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txvAula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="103dp"
+        android:text="Aula"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtAula"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvEdificioPiso"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtAula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="Ingrese Aula"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdificioPiso"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
