@@ -16,7 +16,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnAlumno.setOnClickListener { alumno() }
+        
+        btnSalir.setOnClickListener { salir() }
         btnRegistrar.setOnClickListener { registrarClases() }
+   
         inicializar1()
         inicializar2()
         inicializar3()
@@ -50,6 +53,11 @@ class MainActivity : AppCompatActivity() {
             println(e.message)
         }
     }
+    menuPrincipal
+    fun salir(){
+        System.exit(0)
+     }
+
 
     private fun registrarClases() {
         val intent = Intent(this, NumRegListarActivity::class.java)
@@ -78,5 +86,6 @@ class MainActivity : AppCompatActivity() {
         }catch (e: Exception){
             println(e.message)
         }
+     
     }
 }

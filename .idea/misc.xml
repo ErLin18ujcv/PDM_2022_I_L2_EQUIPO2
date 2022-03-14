@@ -3,11 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/PDM/Git/PDM_2022_I_L2_EQUIPO2/app/src/main/res/layout/activity_alumno.xml" value="0.24682971014492755" />
-        <entry key="..\:/PDM/Git/PDM_2022_I_L2_EQUIPO2/app/src/main/res/layout/activity_lista_alumno.xml" value="0.24682971014492755" />
-        <entry key="..\:/PDM/Git/PDM_2022_I_L2_EQUIPO2/app/src/main/res/layout/activity_main.xml" value="0.24682971014492755" />
-        <entry key="..\:/PDM/Git/PDM_2022_I_L2_EQUIPO2/app/src/main/res/layout/activity_num_reg_listar.xml" value="0.25" />
-        <entry key="..\:/PDM/Git/PDM_2022_I_L2_EQUIPO2/app/src/main/res/layout/activity_registrar.xml" value="0.25" />
+        menuPrincipal
+        <entry key="..\:/Android/AndroidStudioProjects/PDM_2022_I_L2_EQUIPO2/app/src/main/res/layout/activity_alumno.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/AndroidStudioProjects/PDM_2022_I_L2_EQUIPO2/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+
+        
         <entry key="..\:/Users/erlin/AndroidStudioProjects/PDM_2022_I_L2_EQUIPO2/app/src/main/res/layout/activity_main.xml" value="0.12273550724637682" />
         <entry key="..\:/Users/erlin/AndroidStudioProjects/PDM_2022_I_L2_EQUIPO2/app/src/main/res/layout/row.xml" value="0.14221014492753623" />
       </map>
